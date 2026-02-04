@@ -32,3 +32,8 @@ reports/*
 *.png
 *.csv
 *.json
+
+# Allow project screenshots
+!assets/*.png
+!assets/*.jpg
+!assets/*.jpeg

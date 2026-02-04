@@ -1,4 +1,6 @@
-﻿# Network Intrusion Detection System (NIDS)
+﻿# Network Intrusion Detection System (NIDS) Using Machine Learning
+
+Tags: `machine-learning` `cybersecurity` `nids` `nsl-kdd` `streamlit` `ids`
 
 End-to-end Network Intrusion Detection System using machine learning in Python. It downloads NSL-KDD automatically, trains multiple models, selects the best, and supports batch prediction, a Streamlit UI, and live IDS modes (CSV, Windows Sysmon, Zeek, Suricata).
 
@@ -66,6 +68,19 @@ python -m streamlit run app.py
 The app has two tabs:
 - **Upload CSV** for prediction and metrics
 - **Live IDS** to start/stop live modes
+
+## Screenshots
+Upload CSV and model status:
+![Upload CSV](assets/app_upload.png)
+
+Predictions table and distribution:
+![Predictions](assets/app_predictions.png)
+
+Per-class precision/recall and confusion matrix:
+![Metrics](assets/app_metrics.png)
+
+Feature importance:
+![Feature Importance](assets/app_feature_importance.png)
 
 ## Labeled Sample CSV (for precision/recall in the app)
 ```
