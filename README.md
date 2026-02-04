@@ -1,6 +1,7 @@
 ﻿# Network Intrusion Detection System (NIDS) Using Machine Learning
 
-Tags: `machine-learning` `cybersecurity` `nids` `nsl-kdd` `streamlit` `ids`
+![Status](https://img.shields.io/badge/status-active-success) ![ML](https://img.shields.io/badge/machine_learning-scikit--learn-blue) ![Security](https://img.shields.io/badge/cybersecurity-intrusion_detection-red) ![Dataset](https://img.shields.io/badge/dataset-NSL--KDD-orange) ![Python](https://img.shields.io/badge/python-3.9%2B-yellow) ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey)
+
 
 End-to-end Network Intrusion Detection System using machine learning in Python. It downloads NSL-KDD automatically, trains multiple models, selects the best, and supports batch prediction, a Streamlit UI, and live IDS modes (CSV, Windows Sysmon, Zeek, Suricata).
 
