@@ -26,7 +26,6 @@ End-to-end Network Intrusion Detection System using machine learning in Python. 
 
 ## Setup
 ```
-powershell
 python -m venv .venv
 .venv\Scripts\activate
 python -m pip install --upgrade pip
@@ -35,7 +34,6 @@ python -m pip install -r requirements.txt
 
 ## Train the Model (One-Time)
 ```
-powershell
 python -m src.train
 ```
 This generates:
@@ -48,12 +46,10 @@ This generates:
 
 ## Batch Prediction (CSV)
 ```
-powershell
 python -m src.predict --input data\sample_input.csv --output reports\predictions.csv
 ```
 Optional:
 ```
-powershell
 python -m src.predict --input data\sample_input.csv --output reports\predictions.csv --threshold 0.4 --summary reports\summary.json
 ```
 Output columns:
@@ -63,7 +59,6 @@ Output columns:
 
 ## Streamlit App
 ```
-powershell
 python -m streamlit run app.py
 ```
 The app has two tabs:
@@ -85,7 +80,6 @@ Feature importance:
 
 ## Labeled Sample CSV (for precision/recall in the app)
 ```
-powershell
 python -c "import pandas as pd; from src.config import COLUMNS; df = pd.read_csv('data/KDDTest+.txt', names=COLUMNS, header=None); df.head(200).to_csv('data\\sample_with_labels.csv', index=False); print('Wrote data\\sample_with_labels.csv')"
 ```
 
