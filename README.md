@@ -95,14 +95,12 @@ All live modes use the same trained model (`models/best_model.joblib`). Run one 
 ### Option A: Live CSV (NSL-KDD columns)
 Tail a CSV that already has NSL-KDD feature columns.
 ```
-powershell
 python -m src.live_csv --input C:\path\to\live.csv --output reports\live_predictions.csv
 ```
 
 ### Option B: Windows Sysmon (Event ID 3)
 Requires Sysmon to be installed and logging network connections.
 ```
-powershell
 python -m src.live_windows --channel "Microsoft-Windows-Sysmon/Operational" --event-id 3 --output reports\live_alerts_sysmon.csv --start-at-end
 ```
 Notes:
@@ -112,14 +110,12 @@ Notes:
 ### Option C: Zeek conn.log
 Tail Zeek flow logs (`conn.log`).
 ```
-powershell
 python -m src.live_ids --log C:\path\to\conn.log --output reports\live_alerts.csv
 ```
 
 ### Option D: Suricata eve.json
 Tail Suricata flow events in `eve.json`.
 ```
-powershell
 python -m src.live_suricata --log C:\path\to\eve.json --output reports\live_alerts_suricata.csv
 ```
 
